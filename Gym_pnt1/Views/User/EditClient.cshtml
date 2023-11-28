@@ -1,0 +1,60 @@
+﻿@using Gym_pnt1.Models.Entities;
+@model Client
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Fecha de nacimiento</th>
+            <th>Membresia</th>
+        </tr>
+        <tr>
+            <th>@Model.Name</th>
+            <th>@Model.LastName</th>
+            <th>@Model.BirthDate</th>
+            <th>@Model.getCategory()</th>
+        </tr>
+    </thead>
+    <tbody>
+
+    </tbody>
+</table>
+
+
+<form asp-action="SubmitClientToDb">
+    <div class="form-group">
+        <label asp-for="Id">Name</label>
+        <input readonly asp-for="Id" class="form-control" />
+    </div>
+    <p>@Model.Id</p>
+    <p>@Model.MembershipId</p>
+    <div class="form-group">
+        <label asp-for="Name">Name</label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="LastName">Last Name</label>
+        <input asp-for="LastName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="BirthDate">Birth Date</label>
+        <input asp-for="BirthDate" class="form-control" />
+    </div>
+
+    <div>
+        <label asp-for="Membership">MembershipId</label>
+        <select asp-for="Membership" class="form-select" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+            <option value="0">Gold</option>
+            <option value="1">Silver</option>
+            <option value="2">Bronze</option>
+        </select>
+    </div>
+
+    <div>
+        <br />
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+

@@ -11,13 +11,13 @@ namespace Gym_pnt1.Models.Entities
         public DateTime BirthDate { get; set; }
         public bool status { get; set; }
 
-        public User( string name, string lastName, DateTime birthDate, bool status)
+        /*public User( string name, string lastName, DateTime birthDate)
         {
             Name = name;
             LastName = lastName;
             BirthDate = birthDate;
-            this.status = status;
-        }
+            this.status = true;
+        }*/
     }
 
 

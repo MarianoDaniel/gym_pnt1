@@ -1,18 +1,53 @@
-﻿namespace Gym_pnt1.Models.Entities
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+
+namespace Gym_pnt1.Models.Entities
 {
     public class Client : User
     {
         public DateTime StartDate { get; set; }
         public int MembershipId { get; set; } // Atributo Id de Membership
-        public virtual Membership Membership { get; set; }
+        public  Membership Membership { get; set; }
 
-        public Client(string name, string lastName, DateTime birthDate, bool status, DateTime startDate, int membershipId)
-            : base(name, lastName, birthDate, status)
+
+
+        /* public Client(string name, string lastName, DateTime birthDate, int membershipId)
+             : base(name, lastName, birthDate)
+         {
+             this.MembershipId = membershipId;
+         }*/
+        /*public Client(string name, string lastName, DateTime birthDate, bool status, DateTime startDate, Membership membership) : base(name, lastName, birthDate, status)
         {
             this.StartDate = startDate;
-            this.MembershipId = membershipId;
+            this.Membership = membership;
+        }*/
+
+        public string getCategory()
+        {
+            Context context = new Context();
+            Membership mem = context.Membership.Find(this.MembershipId);
+            string category = mem.Category.ToString();
+
+            return category;
         }
+        public int getId()
+        {
+            return this.Membership.MembershipId;
+        }
+        public String getStr()
+        {  
+            return "Membresia: " + this.Membership.getCategory();
+        }
+       
+
+
     }
+
+   
+  
+
+
+
 
     /*public class Client : User
     {

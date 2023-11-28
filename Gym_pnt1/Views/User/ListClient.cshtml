@@ -1,0 +1,41 @@
+﻿@using Gym_pnt1.Models.Entities
+@model List<Client>
+           
+<h1 style="text-align:center">CLIENTES</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Membresia</th>
+            <th>Acciones</th>
+        
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            Context context = new Context();
+            List<Membership> Memberships = context.Membership.ToList();
+
+            foreach (var cliente in Model)
+            {
+                <tr>
+                    <td>@cliente.Id</td>
+                    <td>@cliente.Name</td>
+                    <td>@cliente.getCategory()</td>
+                    <td>
+                    <div>
+                            <a asp-route-id="@cliente.Id" asp-controller="User" asp-action="EditClient">Editar</a>
+                    <button>Eliminar</button>
+                    </div>
+                    </td>
+                    <!-- -->
+                </tr>
+            }
+        }
+        
+    </tbody>
+</table>
+
+
+

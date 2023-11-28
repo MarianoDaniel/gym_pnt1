@@ -14,5 +14,13 @@ namespace Gym_pnt1.Models.Entities
             EndDate = endDate;
             Category = category;
         }
+
+        public MembershipCategory getCategory()
+        {
+            return Category;
+        }
+
+
+
     }
 }

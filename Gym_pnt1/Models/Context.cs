@@ -9,7 +9,7 @@ namespace Gym_pnt1.Models
         public DbSet<Machine> Machines { get; set; }
         public DbSet<Client> Clients { get; set; }
         public DbSet<Admin> Admins { get; set; }
-
+        public DbSet<Membership> Membership { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
