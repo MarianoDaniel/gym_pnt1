@@ -22,11 +22,12 @@
                 <tr>
                     <td>@cliente.Id</td>
                     <td>@cliente.Name</td>
+                    <td>@cliente.LastName</td>
                     <td>@cliente.getCategory()</td>
                     <td>
                     <div>
                             <a asp-route-id="@cliente.Id" asp-controller="User" asp-action="EditClient">Editar</a>
-                    <button>Eliminar</button>
+                            <a asp-route-id="@cliente.Id" asp-controller="User" asp-action="DeleteClient">Eliminar</a>
                     </div>
                     </td>
                     <!-- -->

@@ -57,7 +57,33 @@ namespace Gym_pnt1.Controllers
             return View(client);
         }
 
-        public IActionResult SubmitClientToDb(Client client)
+        public IActionResult SubmitClientToDb(Client client, int i, int a)
+        {
+            MembershipCategory membership = MembershipCategory.BRONZE;
+            switch (client.MembershipId)
+            {
+                case 0: membership = MembershipCategory.GOLD; break;
+                case 1: membership = MembershipCategory.SILVER; break;
+                case 2: membership = MembershipCategory.BRONZE; break;
+            }
+            Membership mem = context.Membership.Find(i);
+            mem.Category = membership;
+            Client cliente = context.Clients.Find(a);
+            cliente.Name = client.Name;
+            cliente.LastName = client.LastName;
+            cliente.BirthDate = client.BirthDate;
+            context.SaveChanges();
+            return RedirectToAction(nameof(ListClient));
+        }
+
+        public IActionResult DeleteClient(int id)
+        {
+            Client client = context.Clients.Find(id);
+            context.Clients.Remove(client);
+            context.SaveChanges();
+            return RedirectToAction(nameof(ListClient));
+        }
+        /*public IActionResult SubmitClientToDb(Client client)
         {
             Membership mem = context.Membership.Find(client.MembershipId);
             client.MembershipId = 1002;
@@ -66,7 +92,7 @@ namespace Gym_pnt1.Controllers
             context.Update(client.Membership);
             context.SaveChanges();
             return RedirectToAction(nameof(ListClient));
-        }
+        }*/
 
 
 

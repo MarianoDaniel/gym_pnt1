@@ -21,8 +21,46 @@
     </tbody>
 </table>
 
-
 <form asp-action="SubmitClientToDb">
+    <div class="form-group">
+        <label asp-for="Name">Name</label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="LastName">Last Name</label>
+        <input asp-for="LastName" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="BirthDate">Birth Date</label>
+        <input asp-for="BirthDate" class="form-control" />
+    </div>
+    <div>
+        <label asp-for="MembershipId">Membership</label>
+        <select asp-for="MembershipId" class="form-select" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+            <option value="0">Gold</option>
+            <option value="1">Silver</option>
+            <option value="2">Bronze</option>
+        </select>
+    </div>
+
+    <div style="white-space: pre-line; display: none;" >
+        <label asp-for="Membership.MembershipId">Membership Id</label>
+        <input hidden name="i" value="@Model.Membership.MembershipId" />
+    </div>
+
+
+    <div style="white-space: pre-line; display: none;">
+        <label asp-for="Id">Client Id</label>
+        <input readonly name="a" value="@Model.Id" />
+    </div>
+
+    <div>
+        <br />
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+<!-- <form asp-action="SubmitClientToDb">
     <div class="form-group">
         <label asp-for="Id">Name</label>
         <input readonly asp-for="Id" class="form-control" />
@@ -56,5 +94,5 @@
         <br />
         <button type="submit" class="btn btn-primary">Submit</button>
     </div>
-</form>
+</form>-->
 
