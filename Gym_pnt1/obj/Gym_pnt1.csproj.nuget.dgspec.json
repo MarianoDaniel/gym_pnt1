@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\juani\\source\\repos\\Gym_pnt1\\Gym_pnt1\\Gym_pnt1.csproj": {}
+    "C:\\Users\\Familia\\Source\\Repos\\gym_pnt1\\Gym_pnt1\\Gym_pnt1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\juani\\source\\repos\\Gym_pnt1\\Gym_pnt1\\Gym_pnt1.csproj": {
+    "C:\\Users\\Familia\\Source\\Repos\\gym_pnt1\\Gym_pnt1\\Gym_pnt1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\juani\\source\\repos\\Gym_pnt1\\Gym_pnt1\\Gym_pnt1.csproj",
+        "projectUniqueName": "C:\\Users\\Familia\\Source\\Repos\\gym_pnt1\\Gym_pnt1\\Gym_pnt1.csproj",
         "projectName": "Gym_pnt1",
-        "projectPath": "C:\\Users\\juani\\source\\repos\\Gym_pnt1\\Gym_pnt1\\Gym_pnt1.csproj",
-        "packagesPath": "C:\\Users\\juani\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\juani\\source\\repos\\Gym_pnt1\\Gym_pnt1\\obj\\",
+        "projectPath": "C:\\Users\\Familia\\Source\\Repos\\gym_pnt1\\Gym_pnt1\\Gym_pnt1.csproj",
+        "packagesPath": "C:\\Users\\Familia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Familia\\Source\\Repos\\gym_pnt1\\Gym_pnt1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\juani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Familia\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -70,7 +70,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

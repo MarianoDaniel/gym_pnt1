@@ -1,0 +1,53 @@
+﻿@using Gym_pnt1.Models.Entities
+@model List<Client>
+<style>
+    .cards-container {
+        display:flex;
+    }
+    .card {
+        padding: 20px;
+        margin: 20px;
+        color: white
+    }
+</style>
+
+<h1 style="text-align:center">CLIENTES ENCONTRADOS</h1>
+<div class="cards-container">
+    @{
+        foreach (var cliente in Model)
+        {
+            string backgroundColor = "";
+            switch (cliente.getCategory())
+            {
+                case "GOLD":
+                    backgroundColor = "#ffd700"; // Color oro
+                    break;
+                case "SILVER":
+                    backgroundColor = "#c0c0c0"; // Color plata (puedes cambiar estos colores según tus preferencias)
+                    break;
+                case "BRONZE":
+                    backgroundColor = "#cd7f32"; // Color bronce
+                    break;
+                default:
+                    backgroundColor = "#f0f0f0"; // Color predeterminado
+                    break;
+            }
+            <div class="card" style="background-color: @backgroundColor">
+                <h4>Membresia</h4>
+                <div>
+                    <span>Nombre completo:</span>
+                    <span>@cliente.Name @cliente.LastName</span>
+                </div>
+                <div>
+                    <span>fecha de nacimiento:</span>
+                    <span>@cliente.BirthDate</span>
+                </div>
+                <div>
+                    <span>tipo de membresia:</span>
+                    <span>@cliente.getCategory()</span>
+                </div>
+            </div>
+        }
+    }
+    
+</div>

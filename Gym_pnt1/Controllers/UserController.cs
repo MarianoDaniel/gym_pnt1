@@ -17,6 +17,11 @@ namespace Gym_pnt1.Controllers
         [HttpGet]
         public IActionResult AddUser()
         {
+            bool UserExists = !string.IsNullOrEmpty(HttpContext.Session.GetString("username"));
+            if (!UserExists)
+            {
+                return RedirectToAction("Login", "User");
+            }
             return View();
         }
         [HttpPost]
@@ -42,6 +47,11 @@ namespace Gym_pnt1.Controllers
         
         public IActionResult ListClient()
         {
+            bool UserExists = !string.IsNullOrEmpty(HttpContext.Session.GetString("username"));
+            if (!UserExists)
+            {
+                return RedirectToAction("Login", "User");
+            }
             List<Client> Clients = context.Clients.ToList();
             Console.WriteLine(Clients);
            // var elemento = context.Membership.Find(client);
@@ -93,6 +103,53 @@ namespace Gym_pnt1.Controllers
             context.SaveChanges();
             return RedirectToAction(nameof(ListClient));
         }*/
+
+
+        public IActionResult GetSearchClientByNameForm(string name)
+        {
+            bool UserExists = !string.IsNullOrEmpty(HttpContext.Session.GetString("username"));
+            if (!UserExists)
+            {
+                return RedirectToAction("Login", "User");
+            }
+            return View();
+        }
+
+        public IActionResult GetClientByName(Client client)
+        {
+            string NameToFind = client.Name.ToLower().Trim();
+            List<Client> ClientsFound = context.Clients.Where(c => c.Name.ToLower().Contains(NameToFind)).ToList();
+            return View(ClientsFound);
+        }
+
+        [HttpGet]
+        public IActionResult Login()
+        {
+            var model = new LoginViewModel();
+            return View(model);
+        }
+
+        [HttpPost]
+        public IActionResult Login(LoginViewModel login)
+        {
+            if (login.Username == "admin" && login.Password == "admin")
+            {
+                HttpContext.Session.SetString("username", login.Username);
+                return RedirectToAction("Index","Home");
+            }
+            else
+            {
+                login.MensajeError = "Credenciales incorrectas. Por favor, inténtalo de nuevo.";
+                login.MensajeErrorVisible = "block";
+                return View(login);
+            }
+        }
+
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Remove("username");
+            return RedirectToAction("Login");
+        }
 
 
 

@@ -1,0 +1,17 @@
+﻿@using Gym_pnt1.Models.Entities;
+@model Client
+<body>
+    <h1>Buscar Cliente</h1>
+    <form asp-action="GetClientByName">
+
+        <div class="form-group">
+            <label asp-for="Name">Buscar nombre </label>
+            <input asp-for="Name" class="form-control" />
+        </div>
+ 
+        <div>
+            <br />
+            <button type="submit" class="btn btn-primary">Aceptar</button>
+        </div>
+    </form>
+</body>
