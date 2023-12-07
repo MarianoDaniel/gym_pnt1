@@ -1,0 +1,18 @@
+﻿@using Gym_pnt1.Models.Entities
+@model Membership
+
+<form asp-action="SubmitClientActivityToDb">
+    <div class="form-group">
+        <label asp-for="NumberOfEntries">Cantidad de ingresos</label>
+        <input asp-for="NumberOfEntries" class="form-control" />
+    </div>
+    <div style="white-space: pre-line; display: none;">
+        <label asp-for="MembershipId">Client Id</label>
+        <input readonly name="a" value="@Model.MembershipId" />
+    </div>
+
+    <div>
+        <br />
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>

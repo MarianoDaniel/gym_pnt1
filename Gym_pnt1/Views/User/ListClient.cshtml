@@ -7,7 +7,9 @@
         <tr>
             <th>ID</th>
             <th>Nombre</th>
+            <th>Apellido</th>
             <th>Membresia</th>
+            <th>Actividad</th>
             <th>Acciones</th>
         
         </tr>
@@ -24,6 +26,7 @@
                     <td>@cliente.Name</td>
                     <td>@cliente.LastName</td>
                     <td>@cliente.getCategory()</td>
+                    <td>@cliente.getActivity()</td>
                     <td>
                     <div>
                             <a asp-route-id="@cliente.Id" asp-controller="User" asp-action="EditClient">Editar</a>

@@ -151,7 +151,22 @@ namespace Gym_pnt1.Controllers
             return RedirectToAction("Login");
         }
 
-
+        public IActionResult EditClientActivity(int id)
+        {
+            Console.WriteLine(id);
+            Client client = context.Clients.Find(id);
+            Membership mem = context.Membership.Find(client.MembershipId);
+            client.Membership = mem;
+            return View(mem);
+        }
+        public IActionResult SubmitClientActivityToDb(Membership mem)
+        {
+            Console.WriteLine(mem);
+            Membership oldMemberhsip = context.Membership.Find(mem.MembershipId);
+            oldMemberhsip.NumberOfEntries = mem.NumberOfEntries;
+            context.SaveChanges();
+            return RedirectToAction(nameof(ListClient));
+        }
 
 
     }

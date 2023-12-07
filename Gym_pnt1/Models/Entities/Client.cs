@@ -10,7 +10,6 @@ namespace Gym_pnt1.Models.Entities
         public  Membership Membership { get; set; }
 
 
-
         /* public Client(string name, string lastName, DateTime birthDate, int membershipId)
              : base(name, lastName, birthDate)
          {
@@ -30,6 +29,12 @@ namespace Gym_pnt1.Models.Entities
 
             return category;
         }
+        public int getActivity()
+        {
+            Context context = new Context();
+            Membership mem = context.Membership.Find(this.MembershipId);
+            return mem.NumberOfEntries;
+        }
         public int getId()
         {
             return this.Membership.MembershipId;
@@ -37,6 +42,11 @@ namespace Gym_pnt1.Models.Entities
         public String getStr()
         {  
             return "Membresia: " + this.Membership.getCategory();
+        }
+
+        public int getPrice()
+        {
+            return this.Membership.getPrice();
         }
        
 

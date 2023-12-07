@@ -9,61 +9,65 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Gym_pnt1
 build_property.RootNamespace = Gym_pnt1
-build_property.ProjectDir = C:\Users\Familia\Source\Repos\gym_pnt1\Gym_pnt1\
+build_property.ProjectDir = C:\Users\juani\source\repos\Gym_pnt1\Gym_pnt1\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Familia\Source\Repos\gym_pnt1\Gym_pnt1
+build_property.MSBuildProjectDirectory = C:\Users\juani\source\repos\Gym_pnt1\Gym_pnt1
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Familia/Source/Repos/gym_pnt1/Gym_pnt1/Views/Home/Index.cshtml]
+[C:/Users/juani/source/repos/Gym_pnt1/Gym_pnt1/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Familia/Source/Repos/gym_pnt1/Gym_pnt1/Views/Home/Privacy.cshtml]
+[C:/Users/juani/source/repos/Gym_pnt1/Gym_pnt1/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Familia/Source/Repos/gym_pnt1/Gym_pnt1/Views/Shared/Error.cshtml]
+[C:/Users/juani/source/repos/Gym_pnt1/Gym_pnt1/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Familia/Source/Repos/gym_pnt1/Gym_pnt1/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/juani/source/repos/Gym_pnt1/Gym_pnt1/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Familia/Source/Repos/gym_pnt1/Gym_pnt1/Views/User/AddUser.cshtml]
+[C:/Users/juani/source/repos/Gym_pnt1/Gym_pnt1/Views/User/AddUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxBZGRVc2VyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Familia/Source/Repos/gym_pnt1/Gym_pnt1/Views/User/EditClient.cshtml]
+[C:/Users/juani/source/repos/Gym_pnt1/Gym_pnt1/Views/User/EditClient.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxFZGl0Q2xpZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Familia/Source/Repos/gym_pnt1/Gym_pnt1/Views/User/GetClientByName.cshtml]
+[C:/Users/juani/source/repos/Gym_pnt1/Gym_pnt1/Views/User/EditClientActivity.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxFZGl0Q2xpZW50QWN0aXZpdHkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/juani/source/repos/Gym_pnt1/Gym_pnt1/Views/User/GetClientByName.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxHZXRDbGllbnRCeU5hbWUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Familia/Source/Repos/gym_pnt1/Gym_pnt1/Views/User/GetSearchClientByNameForm.cshtml]
+[C:/Users/juani/source/repos/Gym_pnt1/Gym_pnt1/Views/User/GetSearchClientByNameForm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxHZXRTZWFyY2hDbGllbnRCeU5hbWVGb3JtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Familia/Source/Repos/gym_pnt1/Gym_pnt1/Views/User/ListClient.cshtml]
+[C:/Users/juani/source/repos/Gym_pnt1/Gym_pnt1/Views/User/ListClient.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMaXN0Q2xpZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Familia/Source/Repos/gym_pnt1/Gym_pnt1/Views/User/Login.cshtml]
+[C:/Users/juani/source/repos/Gym_pnt1/Gym_pnt1/Views/User/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Familia/Source/Repos/gym_pnt1/Gym_pnt1/Views/_ViewImports.cshtml]
+[C:/Users/juani/source/repos/Gym_pnt1/Gym_pnt1/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Familia/Source/Repos/gym_pnt1/Gym_pnt1/Views/_ViewStart.cshtml]
+[C:/Users/juani/source/repos/Gym_pnt1/Gym_pnt1/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Familia/Source/Repos/gym_pnt1/Gym_pnt1/Views/Shared/_Layout.cshtml]
+[C:/Users/juani/source/repos/Gym_pnt1/Gym_pnt1/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-s3pshy2yul

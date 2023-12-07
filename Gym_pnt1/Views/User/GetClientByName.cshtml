@@ -46,6 +46,10 @@
                     <span>tipo de membresia:</span>
                     <span>@cliente.getCategory()</span>
                 </div>
+                <div>
+                    <a asp-route-id="@cliente.Id" asp-controller="User" asp-action="EditClientActivity">Editar</a>
+                    
+                </div>
             </div>
         }
     }
